@@ -131,9 +131,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   position: relative;
 }
 .calendar .image a img {
-  height: 100%;
   margin: 0;
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   max-width: 100%;
 }
