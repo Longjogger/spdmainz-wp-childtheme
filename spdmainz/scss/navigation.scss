@@ -30,4 +30,10 @@ nav#nav-main {
 #mobile-nav-trigger {
     color: $white;
     background-color: $red;
+    button.nav-trigger-case {
+        color: $white;
+        &:hover {
+            color: $white;
+        }
+    }
 }
