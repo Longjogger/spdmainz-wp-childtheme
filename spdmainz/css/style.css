@@ -122,7 +122,15 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   right: 0;
   top: 0;
 }
-.calendar .image img {
+.calendar .image a {
+  display: block;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 66.67%;
+  position: relative;
+}
+.calendar .image a img {
   height: 100%;
   margin: 0;
   object-fit: fill;
