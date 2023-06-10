@@ -5,10 +5,13 @@
 
 // News-Block
 // Anpassung der Abstände unter dem Bild
-.wp-block-kadence-posts .loop-entry .entry-content-wrap {
-	padding: 1rem;
-	.entry-meta {
-		font-size: unset;
+.wp-block-kadence-posts .loop-entry {
+	box-shadow: unset;
+	.entry-content-wrap {
+		padding: 1rem;
+		.entry-meta {
+			font-size: unset;
+		}
 	}
 }
 
