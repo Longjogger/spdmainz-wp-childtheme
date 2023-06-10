@@ -119,14 +119,13 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 .calendar .image {
   bottom: 0;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0;
 }
 .calendar .image img {
   height: 100%;
   margin: 0;
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   max-width: 100%;
 }
