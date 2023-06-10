@@ -12,6 +12,15 @@ nav#nav-main {
                     color: $white;
                 }
             }
+            ul li {
+                a {
+                    color: $red;
+                    &:hover {
+                        background-color: $red;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }
