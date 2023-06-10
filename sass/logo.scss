@@ -1,0 +1,28 @@
+#logo {
+
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+    .brand {
+        display: inline-block;
+    }
+
+    p.kad_tagline {
+        /* Slogan styling */
+        font-family: "Open Sans";
+        line-height: $logo-font-size;
+        font-weight: 600;
+        font-style: normal;
+        color: $red;
+        font-size: $logo-font-size;
+        text-align: left;
+        /* Slogan in vertical align bottom */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px 0px 0px 10px;
+        margin: 0px;
+    }
+    
+}

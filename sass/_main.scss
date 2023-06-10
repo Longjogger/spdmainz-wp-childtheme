@@ -11,3 +11,25 @@ License: GNU General Public License or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: SPD, red, rot
 */
+
+// Defining colors
+@import '_variables';
+
+@import 'general';
+
+@import 'logo';
+
+@import 'startseite';
+
+
+// General
+
+// Font styling
+h2 {
+	font-family: "Open Sans";
+	line-height: 30px;
+	font-weight: 600;
+	font-style: normal;
+	color: $red;
+	font-size: 26px;
+}

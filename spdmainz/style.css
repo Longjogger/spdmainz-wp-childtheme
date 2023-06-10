@@ -12,39 +12,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: SPD, red, rot
 */
 
-/* Logo */
-#logo {
-	justify-content: center;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-#logo .brand {
-	display: inline-block;
-}
-
-#logo p.kad_tagline {
-	/* Slogan styling */
-	font-family: "Open Sans";
-	line-height: 18px;
-	font-weight: 600;
-	font-style: normal;
-	color: #e3000f;
-	font-size:18px;
-	text-align: left;
-	/* Slogan in vertical align bottom */
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	padding: 0px 0px 0px 10px;
-	margin: 0px;
-}
-
-
-
-
-
-
 /* Navigation */
 nav#nav-main ul.sf-menu li a {
 /*font-family : 'spd-versal-normal' !important ;*/
@@ -209,19 +176,4 @@ hr {
 /* Sidebar-Link */
 .sidebar a {
    color: #E3000F!important;
-}
-
-/* Font styling */
-h2 {
-	font-family: "Open Sans";
-	line-height: 30px;
-	font-weight: 600;
-	font-style: normal;
-	color: #e3000f;
-	font-size: 26px;
-}
-
-/* Startseite: Aktuelles */
-.wp-block-kadence-posts .loop-entry .entry-content-wrap {
-	padding: 1rem;
 }
