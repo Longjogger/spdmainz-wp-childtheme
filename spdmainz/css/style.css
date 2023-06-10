@@ -11,6 +11,20 @@ License: GNU General Public License or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: SPD, red, rot
 */
+html {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
+h2 {
+  font-family: "Open Sans";
+  line-height: 2.2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+  font-size: 2.1rem;
+}
+
 #logo {
   justify-content: center;
   display: flex;
@@ -38,6 +52,15 @@ Tags: SPD, red, rot
 
 .wp-block-kadence-posts .loop-entry .entry-content-wrap {
   padding: 1rem;
+}
+
+h2 {
+  font-family: "Open Sans";
+  line-height: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
