@@ -113,7 +113,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   font-size: unset;
 }
 
-.cal-box {
+.calendar .wp-block-column {
   padding: 0 1rem 0 1rem;
 }
 
