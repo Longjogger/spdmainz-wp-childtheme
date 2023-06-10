@@ -1,16 +1,3 @@
-/* 
-Theme Name: SPD Mainz
-Theme URI: https://www.erikdonner.de/
-Description: SPD Mainz Wordpress Theme
-Theme Author: Erik Donner
-Author URI: https://erikdonner.de/
-Template: virtue_premium
-Version: 1.0.0
-Text Domain: spdmainz
-License: GNU General Public License or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: SPD, red, rot
-*/
 html {
   font-family: "Open Sans";
   font-size: 12px;
@@ -52,15 +39,6 @@ h2 {
 
 .wp-block-kadence-posts .loop-entry .entry-content-wrap {
   padding: 1rem;
-}
-
-h2 {
-  font-family: "Open Sans";
-  line-height: 30px;
-  font-weight: 600;
-  font-style: normal;
-  color: #e3000f;
-  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */
