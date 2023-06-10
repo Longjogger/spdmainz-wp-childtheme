@@ -16,8 +16,11 @@
 }
 
 // Kalender
-.calendar .wp-block-column {
-	.info {
-		padding: 0 1rem 0 1rem;
+.calendar {
+	column-gap: 2.5rem;
+	.wp-block-column {
+		.info {
+			padding: 0 1rem 0 1rem;
+		}
 	}
 }
