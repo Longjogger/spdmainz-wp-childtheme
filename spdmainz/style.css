@@ -1,0 +1,231 @@
+/* 
+Theme Name: SPD Mainz
+Theme URI: https://www.erikdonner.de/
+Description: SPD Mainz Wordpress Theme
+Theme Author: Erik Donner
+Author URI: https://erikdonner.de/
+Template: virtue_premium
+Version: 1.0.0
+Text Domain: spdmainz
+License: GNU General Public License or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: SPD, red, rot
+*/
+
+/* Logo */
+#logo {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#logo .brand {
+	display: inline-block;
+}
+
+#logo p.kad_tagline {
+	/* Slogan styling */
+	font-family: "Open Sans";
+	line-height: 18px;
+	font-weight: 600;
+	font-style: normal;
+	color: #e3000f;
+	font-size:18px;
+	text-align: left;
+	/* Slogan in vertical align bottom */
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+
+
+
+
+
+
+/* Navigation */
+nav#nav-main ul.sf-menu li a {
+/*font-family : 'spd-versal-normal' !important ;*/
+/*text-shadow : 0 0 0 #E3000F !important ;*/
+color : #E3000F !important ;
+}
+
+nav#nav-main ul.sf-menu li a:hover {
+   background-color: #E3000F !important;
+   color: #FFFFFF !important;
+}
+
+nav#nav-main ul.sf-menu li ul.sub-menu li a {
+/*   font-family: 'spd-versal-normal' !important;*/
+}
+
+
+/* Slider: Padding */
+.sliderclass {
+	padding: 0;
+}
+
+/* Seitentitel: Linien ausblenden */
+.page-header {
+	border: 0;
+	margin: 0;
+}
+
+
+/* Startseite BEGINN */
+.cal-box {
+	padding: 0 1rem 0 1rem;
+}
+/* Startseite ENDE */
+
+/* Beitrags- und Seitenüberschriften, normale Absätze: Blocksatz & Silbentrennung */
+div.entry-content p {
+  text-align:justify;
+}
+
+div.entry-content p h1 {
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Team Layout */
+.teamshowcasefree_style04_description {
+  min-height:120px!important;
+}
+.teamshowcasefree_style04 > .style_04_title {
+  font-family: 'spd-versal-bold'!important;
+  color: #E3000F!important;
+  font-weight: bold!important;
+  font-size:16px!important;
+  letter-spacing: 0px!important;
+}
+.teamshowcasefree_style04_designation {
+  font-size:12px!important;
+  font-weight:bold!important;
+  line-height:115%!important;
+}
+.teamshowcasefree_style04_emails {
+  font-size:12px!important;
+}
+
+/* Personenauflistungen: Bildrand ausblenden */
+.gremium {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  padding: 0px;
+}
+
+/* Bildnachweis */
+p.image-credits {
+  padding-top: 20px;
+  font-size: small;
+}
+
+/* Kontaktformular */
+label {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.widget-inner {
+  clear:both;
+}
+
+
+/* ###   Newsletter   ### */
+form.newsletter .wpcf7-text, form.newsletter .wpcf7-select {
+  width:250px!important;
+  border: 1px solid grey;
+  position: relative;
+}
+
+/* ###   Kalender   ### */
+ul.cal_widget {
+  padding-left: 0px!important;
+  margin-left: 0px!important;
+  clear:both!important;
+}
+ul.cal_widget li#cal_widget {
+  margin-bottom: 5px!important;
+  margin-top: 5px!important;
+  border: none!important;
+  clear: both!important;
+  padding-left: 0px!important;
+  margin-left: 0px!important;
+  min-height: 85px!important;
+}
+.calmeta {
+  float:left!important;
+  margin-bottom:10px!important;
+  padding-right: 5px!important;
+  /* width: 60px!important; */
+}
+.calmeta .headerfont {
+  margin-top: 0px!important;
+  width: 60px!important;
+}
+.caltext {
+  line-height: 1.2!important;
+  border:none!important;
+  border-bottom:none!important;
+  height:64px!important;
+}
+.caltext a {
+    border:none!important;
+}
+.caldate {
+  float:left!important;
+  padding:6px 8px 8px!important;
+  margin-top:15px!important;
+  font-size:10px!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+  line-height:normal!important;
+}
+.caldate .calday {
+  display:block!important;
+  font-size:24px!important;
+}
+
+hr {
+  clear:both;
+}
+
+/* Footer */
+#topcontrol {
+  opacity: 0.4!important;
+  z-index:99;
+}
+
+.to_the_top {
+  background-color: #E3000F !important;
+  z-index:99;
+}
+
+/* Sidebar-Link */
+.sidebar a {
+   color: #E3000F!important;
+}
+
+/* Font styling */
+h2 {
+	font-family: "Open Sans";
+	line-height: 30px;
+	font-weight: 600;
+	font-style: normal;
+	color: #e3000f;
+	font-size: 26px;
+}
+
+/* Startseite: Aktuelles */
+.wp-block-kadence-posts .loop-entry .entry-content-wrap {
+	padding: 1rem;
+}
