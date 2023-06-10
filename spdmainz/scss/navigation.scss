@@ -1,3 +1,4 @@
+// Desktop
 nav#nav-main {
     ul.sf-menu {
         li {
@@ -23,4 +24,10 @@ nav#nav-main {
             }
         }
     }
+}
+
+// Mobile
+#mobile-nav-trigger {
+    color: $white;
+    background-color: $red;
 }

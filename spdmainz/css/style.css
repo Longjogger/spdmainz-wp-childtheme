@@ -88,6 +88,11 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   color: #ffffff;
 }
 
+#mobile-nav-trigger {
+  color: #ffffff;
+  background-color: #e3000f;
+}
+
 .sliderclass {
   padding: 0;
 }
