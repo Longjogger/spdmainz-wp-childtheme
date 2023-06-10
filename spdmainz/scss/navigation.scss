@@ -1,7 +1,13 @@
-nav#nav-main ul.sf-menu li a {
-    color: $red;
-    &:hover {
-        background-color: $red;
-        color: $white;
+nav#nav-main {
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 600;
+	font-style: normal;
+    ul.sf-menu li a {
+        color: $red;
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
     }
 }
