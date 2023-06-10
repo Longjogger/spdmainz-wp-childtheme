@@ -18,6 +18,13 @@
 // Kalender
 .calendar {
 	column-gap: 2.5rem;
+	.image {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 	.wp-block-column {
 		.info {
 			padding: 0 1rem 0 1rem;
