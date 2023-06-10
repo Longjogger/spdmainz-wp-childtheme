@@ -1,0 +1,7 @@
+nav#nav-main ul.sf-menu li a {
+    color: $red;
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+}

@@ -67,6 +67,14 @@ h2 {
   margin: 0px;
 }
 
+nav#nav-main ul.sf-menu li a {
+  color: #e3000f;
+}
+nav#nav-main ul.sf-menu li a:hover {
+  background-color: #e3000f;
+  color: #ffffff;
+}
+
 .sliderclass {
   padding: 0;
 }

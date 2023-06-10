@@ -12,18 +12,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: SPD, red, rot
 */
 
-/* Navigation */
-nav#nav-main ul.sf-menu li a {
-/*font-family : 'spd-versal-normal' !important ;*/
-/*text-shadow : 0 0 0 #E3000F !important ;*/
-color : #E3000F !important ;
-}
-
-nav#nav-main ul.sf-menu li a:hover {
-   background-color: #E3000F !important;
-   color: #FFFFFF !important;
-}
-
 /* Beitrags- und Seitenüberschriften, normale Absätze: Blocksatz & Silbentrennung */
 div.entry-content p {
   text-align:justify;
