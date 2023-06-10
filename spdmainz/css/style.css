@@ -113,6 +113,23 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   font-size: unset;
 }
 
+.calendar {
+  column-gap: 2.5rem;
+}
+.calendar .image {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.calendar .image img {
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
 .calendar .wp-block-column .info {
   padding: 0 1rem 0 1rem;
 }
