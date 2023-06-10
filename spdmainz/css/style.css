@@ -12,6 +12,11 @@ h2 {
   font-size: 2.1rem;
 }
 
+.page-header {
+  border: 0;
+  margin: 0;
+}
+
 #logo {
   justify-content: center;
   display: flex;
@@ -37,8 +42,16 @@ h2 {
   margin: 0px;
 }
 
+.sliderclass {
+  padding: 0;
+}
+
 .wp-block-kadence-posts .loop-entry .entry-content-wrap {
   padding: 1rem;
+}
+
+.cal-box {
+  padding: 0 1rem 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

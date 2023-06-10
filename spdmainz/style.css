@@ -24,25 +24,6 @@ nav#nav-main ul.sf-menu li a:hover {
    color: #FFFFFF !important;
 }
 
-
-/* Slider: Padding */
-.sliderclass {
-	padding: 0;
-}
-
-/* Seitentitel: Linien ausblenden */
-.page-header {
-	border: 0;
-	margin: 0;
-}
-
-
-/* Startseite BEGINN */
-.cal-box {
-	padding: 0 1rem 0 1rem;
-}
-/* Startseite ENDE */
-
 /* Beitrags- und Seitenüberschriften, normale Absätze: Blocksatz & Silbentrennung */
 div.entry-content p {
   text-align:justify;
@@ -100,14 +81,6 @@ label {
 
 .widget-inner {
   clear:both;
-}
-
-
-/* ###   Newsletter   ### */
-form.newsletter .wpcf7-text, form.newsletter .wpcf7-select {
-  width:250px!important;
-  border: 1px solid grey;
-  position: relative;
 }
 
 /* ###   Kalender   ### */
