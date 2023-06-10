@@ -67,7 +67,7 @@ h2 {
   margin: 0px;
 }
 
-nav#nav-main {
+nav#nav-main ul.sf-menu {
   font-family: "Open Sans";
   font-size: 1.5rem;
   font-weight: 600;
