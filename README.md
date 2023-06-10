@@ -1,0 +1,1 @@
+# spdmainz-wp-childtheme
