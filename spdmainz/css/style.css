@@ -103,11 +103,14 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 0;
 }
 
+.wp-block-kadence-posts .loop-entry {
+  box-shadow: unset;
+}
 .wp-block-kadence-posts .loop-entry .entry-content-wrap {
   padding: 1rem;
 }
 .wp-block-kadence-posts .loop-entry .entry-content-wrap .entry-meta {
-  font-size: 100%;
+  font-size: unset;
 }
 
 .cal-box {
