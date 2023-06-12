@@ -1,0 +1,8 @@
+// Overview
+
+// Tag Position
+.icon-tag {
+    &::after {
+        content: ' ';
+    }
+}

@@ -145,4 +145,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 1rem;
 }
 
+.icon-tag::after {
+  content: " ";
+}
+
 /*# sourceMappingURL=style.css.map */
