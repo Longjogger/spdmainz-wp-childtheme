@@ -145,6 +145,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 1rem;
 }
 
+header {
+  padding: 0;
+}
+
 .icon-tag::after {
   content: " ";
 }
