@@ -145,7 +145,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 1rem;
 }
 
-.postcontent header {
+.postlist .col-md-7 header, .postlist.fullwidth .col-md-8 header {
   padding: 0;
 }
 
