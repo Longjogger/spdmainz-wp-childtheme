@@ -149,6 +149,14 @@ header {
   padding: 0;
 }
 
+.subhead {
+  font-size: 1rem;
+}
+
+.posttags {
+  font-size: 1rem;
+}
+
 .icon-tag::after {
   content: " ";
 }
