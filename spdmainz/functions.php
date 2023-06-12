@@ -17,3 +17,8 @@ function rn_author_page_redirect() {
     }
 }
 add_action( 'template_redirect', 'rn_author_page_redirect' );
+
+/**
+ * Remove WP-Manifest Link
+ */
+remove_action( 'wp_head', 'wlwmanifest_link' );  
