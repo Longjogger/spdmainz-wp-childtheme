@@ -36,4 +36,17 @@ remove_action( 'wp_head', 'rsd_link' );
 /**
  * Remove WP-Manifest Link
  */
-remove_action( 'wp_head', 'wlwmanifest_link' );  
+remove_action( 'wp_head', 'wlwmanifest_link' );
+
+/**
+ * Disable Users Rest Endpoint
+ */
+add_filter( 'rest_endpoints', function( $endpoints ) {
+    if ( isset( $endpoints['/wp/v2/users'] ) ) {
+        unset( $endpoints['/wp/v2/users'] );
+    }
+    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+});
