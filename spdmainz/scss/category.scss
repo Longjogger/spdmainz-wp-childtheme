@@ -26,3 +26,8 @@
         content: '\0020';
     }
 }
+
+// Postcontent
+.postlist .col-md-7 .entry-content, .postlist.fullwidth .col-md-8 .entry-content {
+    padding: 10px 0px;
+}

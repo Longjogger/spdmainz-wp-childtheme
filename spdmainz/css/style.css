@@ -167,4 +167,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   content: " ";
 }
 
+.postlist .col-md-7 .entry-content, .postlist.fullwidth .col-md-8 .entry-content {
+  padding: 10px 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
