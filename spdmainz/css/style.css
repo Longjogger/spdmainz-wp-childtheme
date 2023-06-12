@@ -171,4 +171,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 10px 0px;
 }
 
+.teamshowcasefree_style01:hover img {
+  transform: unset;
+}
+
 /*# sourceMappingURL=style.css.map */
