@@ -19,6 +19,11 @@ function rn_author_page_redirect() {
 add_action( 'template_redirect', 'rn_author_page_redirect' );
 
 /**
+ * Remove Meta-Tag Generator
+ */
+remove_action( 'wp_head', 'wp_generator' );
+
+/**
  * Remove Generator Meta-Tag
  */
 remove_action( 'wp_head', 'wp_generator' );  
