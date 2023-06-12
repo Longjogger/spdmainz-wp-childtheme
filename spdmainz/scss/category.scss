@@ -3,6 +3,6 @@
 // Tag Position
 .icon-tag {
     &::after {
-        content: ' ';
+        content: '\0020';
     }
 }
