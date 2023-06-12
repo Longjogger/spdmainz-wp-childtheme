@@ -52,6 +52,8 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 /**
  * Disable Users Rest Endpoint
  */
+remove_action( 'wp_head', 'rest_output_link_wp_head' );
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
 add_filter( 'rest_endpoints', function( $endpoints ) {
     if ( isset( $endpoints['/wp/v2/users'] ) ) {
         unset( $endpoints['/wp/v2/users'] );
@@ -61,5 +63,3 @@ add_filter( 'rest_endpoints', function( $endpoints ) {
     }
     return $endpoints;
 });
-remove_action( 'wp_head', 'rest_output_link_wp_head' );
-remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
