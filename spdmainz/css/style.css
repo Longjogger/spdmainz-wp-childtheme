@@ -152,8 +152,14 @@ header {
 .subhead {
   font-size: 1rem;
 }
+.subhead a {
+  font-size: 1rem;
+}
 
 .posttags {
+  font-size: 1rem;
+}
+.posttags a {
   font-size: 1rem;
 }
 
