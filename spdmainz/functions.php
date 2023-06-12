@@ -21,12 +21,17 @@ add_action( 'template_redirect', 'rn_author_page_redirect' );
 /**
  * Remove Generator Meta-Tag
  */
-remove_action('wp_head', 'wp_generator');  
+remove_action( 'wp_head', 'wp_generator' );  
 
 /**
  * Remove DNS-Prefetch
  */
-remove_action('wp_head', 'wp_resource_hints', 2);
+remove_action( 'wp_head', 'wp_resource_hints', 2 );
+
+/**
+ * Remove RSD Link
+ */
+remove_action( 'wp_head', 'rsd_link' );
 
 /**
  * Remove WP-Manifest Link
