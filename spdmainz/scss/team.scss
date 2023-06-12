@@ -3,5 +3,7 @@
     transform: unset;
 }
 .teamshowcasefree_style01:hover .teamshowcasefree_style01_overlay {
-    bottom: unset;
+    opacity: none;
+    transition: unset;
+    background: none;
 }
