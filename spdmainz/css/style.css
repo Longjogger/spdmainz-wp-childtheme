@@ -175,4 +175,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   transform: unset;
 }
 
+.teamshowcasefree_style01:hover .tp-team-pro-thumbnail-01 img {
+  transform: unset;
+}
+
 /*# sourceMappingURL=style.css.map */
