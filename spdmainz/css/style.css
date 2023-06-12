@@ -157,10 +157,10 @@ header {
 }
 
 .posttags {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .posttags a {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .icon-tag::after {
