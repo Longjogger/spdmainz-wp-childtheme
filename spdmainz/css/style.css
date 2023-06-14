@@ -22,6 +22,10 @@ p.image-credits {
   font-size: small;
 }
 
+.kad-topbar-right {
+  text-align: right;
+}
+
 html, body {
   font-family: "Open Sans";
   font-size: 14px;

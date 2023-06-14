@@ -3,6 +3,10 @@
 @import '_fonts';
 
 @import 'general';
+.kad-topbar-right {
+    text-align: right;
+}
+
 html, body {
     @include html();
 }
