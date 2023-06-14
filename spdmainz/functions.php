@@ -12,11 +12,11 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 function tmf_enqueue_scripts() {
     global $post;
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
-    wp_register_style( 'salcodes-stylesheet',  plugin_dir_url( __FILE__ ) . 'css/team.css' );
-        wp_enqueue_style( 'salcodes-stylesheet' );
+        wp_register_style( 'tmf-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
+        wp_enqueue_style( 'tmf-stylesheet' );
     }
-   }
-   add_action( 'get_footer', 'tmf_enqueue_scripts');
+}
+add_action( 'get_footer', 'tmf_enqueue_scripts');
 
 
 
