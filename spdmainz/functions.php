@@ -9,7 +9,7 @@ function child_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
 function child_theme_styles_team() {
-    wp_enqueue_style( 'team-style', get_template_directory_uri() . '/css/team.css' );
+    wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
 }
 add_action( 'get_footer', 'child_theme_styles_team' );
 
