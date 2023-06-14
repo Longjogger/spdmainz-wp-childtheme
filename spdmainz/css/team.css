@@ -31,6 +31,8 @@ p.image-credits {
 [class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content {
   padding: 1rem;
   color: inherit;
+  font-size: inherit;
+  font-style: inherit;
 }
 [class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content h2 {
   font-family: "Open Sans";
