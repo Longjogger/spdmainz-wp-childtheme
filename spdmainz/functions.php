@@ -8,11 +8,22 @@ function child_theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
-function child_theme_styles_team() {
-    wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
-}
-add_action( 'get_footer', 'child_theme_styles_team' );
+// Include if Team Showcase is used
+$current_page_id = get_the_ID();
+// Get the content of the current page
+$content = get_post_field('post_content', $current_page_id);
 
+// Define the pattern to match shortcodes
+$shortcode_pattern = '/\[tmfshortcode\w+\]/';
+
+// Check if the current page has a shortcode matching the pattern
+if (preg_match($shortcode_pattern, $content)) {
+    // The current page has a matching shortcode
+    function child_theme_styles_team() {
+        wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
+    }
+    add_action( 'get_footer', 'child_theme_styles_team' );
+}
 /**
  * Disabling Author Page
  */
