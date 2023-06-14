@@ -193,6 +193,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 }
 [class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-content {
   padding: 1rem;
+}
+[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-content h2 {
   color: unset;
   font-size: unset;
 }

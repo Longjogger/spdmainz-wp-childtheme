@@ -16,8 +16,10 @@
             }
             .tp-team-pro-content {
                 padding: 1rem;
-                color: unset;
-                font-size: unset;
+                h2 {
+                    color: unset;
+                    font-size: unset;
+                }
             }
         }
     }
