@@ -171,6 +171,16 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 10px 0px;
 }
 
+[class^=tp-team-pro-area-] {
+  display: grid;
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-thumbnail-01 img {
+  max-width: 100%;
+}
+
 .teamshowcasefree_style01:hover img {
   transform: unset;
 }
