@@ -55,8 +55,8 @@ h1, p {
 
 #containerfooter {
   font-size: 0.8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: none;
+  padding-bottom: none;
 }
 
 .footerbase {
