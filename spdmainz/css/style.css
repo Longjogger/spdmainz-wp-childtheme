@@ -102,6 +102,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   color: #ffffff;
 }
 
+.mobileclass {
+  background-color: #e3000f;
+}
+
 #mobile-nav-trigger {
   color: #ffffff;
   background-color: #e3000f;
