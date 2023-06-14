@@ -5,9 +5,6 @@
     font-size: 14px;
 	font-weight: 400;
 	font-style: normal;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 @mixin h1() {
@@ -38,6 +35,12 @@
 p.image-credits {
 	padding-top: 20px;
 	font-size: small;
+}
+
+@mixin hyphens() {
+	-ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 // Footer Size

@@ -27,9 +27,6 @@ html, body {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
 }
 
 h1 {
@@ -48,6 +45,12 @@ h2 {
   font-weight: 600;
   font-style: normal;
   color: #e3000f;
+}
+
+h1, p {
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .footer-widget {
