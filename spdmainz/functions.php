@@ -9,11 +9,15 @@ function child_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
 // Include if Team Showcase is used
-function my_custom_function() {
-    $current_page_id = get_queried_object_id();
-    // Use the $current_page_id as needed
-}
-add_action('mywp', 'my_custom_function');
+function tmf_enqueue_scripts() {
+    global $post;
+    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
+    wp_register_style( 'salcodes-stylesheet',  plugin_dir_url( __FILE__ ) . 'css/team.css' );
+        wp_enqueue_style( 'salcodes-stylesheet' );
+    }
+   }
+   add_action( 'wp_enqueue_scripts', 'tmf_enqueue_scripts');
+
 
 
 $current_page_id = get_queried_object_id();;
