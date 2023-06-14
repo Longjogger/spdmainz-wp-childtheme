@@ -49,6 +49,7 @@
                 ?>
                 <span class="virtue-meta-divider"> | </span>
                 <span>
+                    <i class="icon-calendar"></i>
                     <meta itemprop="datePublished" content="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>">
                     <?php echo esc_html( get_the_date( 'j. F Y' ) ); ?>
                 </span>
