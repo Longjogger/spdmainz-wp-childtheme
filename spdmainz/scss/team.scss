@@ -20,6 +20,7 @@
         }
         .tp-team-pro-content {
             padding: 1rem;
+            color: inherit;
             h2 {
                 @include general.h2();
             }
