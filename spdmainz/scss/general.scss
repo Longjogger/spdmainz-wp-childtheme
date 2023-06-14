@@ -49,6 +49,9 @@ p.image-credits {
 	padding-top: none;
 	padding-bottom: 20px;
 	color: $red;
+	a {
+		color: $red;
+	}
 }
 @mixin footerbase() {
 	display:none;
