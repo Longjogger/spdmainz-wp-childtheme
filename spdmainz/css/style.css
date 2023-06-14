@@ -116,7 +116,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 #mobile-nav-trigger .nav-trigger-case:hover {
   color: #ffffff;
 }
-#mobile-nav-trigger .nav-trigger-case:hover .kad-menu-name {
+#mobile-nav-trigger .nav-trigger-case:hover .kad-navbtn, #mobile-nav-trigger .nav-trigger-case:hover .kad-menu-name {
   color: #ffffff;
 }
 
