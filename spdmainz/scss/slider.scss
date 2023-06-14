@@ -16,13 +16,14 @@
 
 .kb-advanced-slide-inner-wrap {
     align-items: flex-end;
-    display:flex;
+    display: flex;
+    padding-left: 0px;
     .kb-advanced-slide-inner {
+        width: unset;
         h2 {
             background-color: $red;
             color: $white;
-
+            padding: 0.4rem 0.6rem 0.4rem 0.6rem;
         }
-        
     }
 }

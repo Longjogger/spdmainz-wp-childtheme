@@ -198,10 +198,15 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 .kb-advanced-slide-inner-wrap {
   align-items: flex-end;
   display: flex;
+  padding-left: 0px;
+}
+.kb-advanced-slide-inner-wrap .kb-advanced-slide-inner {
+  width: unset;
 }
 .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
   background-color: #e3000f;
   color: #ffffff;
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
