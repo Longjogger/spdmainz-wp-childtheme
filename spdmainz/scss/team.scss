@@ -21,7 +21,7 @@
         .tp-team-pro-content {
             padding: 1rem;
             h2 {
-                @include general.h2;
+                @include general.h2();
             }
         }
     }
