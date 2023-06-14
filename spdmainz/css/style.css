@@ -56,7 +56,7 @@ h1, p {
 #containerfooter {
   font-size: 0.8rem;
   padding-top: none;
-  padding-bottom: none;
+  padding-bottom: 20px;
 }
 
 .footerbase {

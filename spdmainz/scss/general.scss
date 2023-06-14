@@ -47,7 +47,7 @@ p.image-credits {
 @mixin containerfooter() {
 	font-size: 0.8rem;
 	padding-top: none;
-	padding-bottom: none;
+	padding-bottom: 20px;
 }
 @mixin footerbase() {
 	display:none;
