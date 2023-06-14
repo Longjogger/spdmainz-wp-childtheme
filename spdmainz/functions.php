@@ -9,11 +9,8 @@ function child_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
 // Include if Team Showcase is used
-$current_page_id = get_queried_object_id();
-// Get the content of the current page
+$current_page_id = get_the_ID();
 $content = get_post_field('post_content', $current_page_id);
-
-// Define the pattern to match shortcodes
 $shortcode_pattern = '/\[tmfshortcode\w+\]/';
 
 // Check if the current page has a shortcode matching the pattern
