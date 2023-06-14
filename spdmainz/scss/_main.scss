@@ -17,6 +17,9 @@ h2 {
 .footer-widget {
     @include containerfooter();
 }
+.footerbase {
+    @include footerbase();
+}
 
 @import 'logo';
 
