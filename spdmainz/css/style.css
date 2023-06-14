@@ -110,10 +110,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   color: #ffffff;
   background-color: #e3000f;
 }
-#mobile-nav-trigger button.nav-trigger-case {
+#mobile-nav-trigger .nav-trigger-case {
   color: #ffffff;
 }
-#mobile-nav-trigger button.nav-trigger-case:hover {
+#mobile-nav-trigger .nav-trigger-case:hover {
   color: #ffffff;
 }
 
