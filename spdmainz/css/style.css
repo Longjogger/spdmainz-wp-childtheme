@@ -185,16 +185,16 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 [class^=tp-team-pro-area-] .gridfilter-item {
   width: 100%;
 }
-[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 {
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 {
   background: none;
 }
-[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-thumbnail-01 img {
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-thumbnail-01 img {
   max-width: 100%;
 }
-[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-content {
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content {
   padding: 1rem;
 }
-[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-content h2 {
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content h2 {
   color: unset;
   font-size: unset;
 }
