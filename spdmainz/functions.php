@@ -9,6 +9,16 @@ function child_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
 /**
+ * Adjustment Frontpage
+ */
+function startseite() {
+    if( is_front_page() ) {
+        wp_enqueue_script( 'startseite-javascript',  get_stylesheet_directory_uri() . '/js/startseite.js' );
+    }
+}
+add_action( 'get_footer', 'startseite');
+
+/**
  * Adjustment Team Showcase
  */
 function team_styles() {
