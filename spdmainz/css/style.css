@@ -195,10 +195,11 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 0;
 }
 
-.kb-advanced-slide-inner {
+.kb-advanced-slide-inner-wrap {
   align-items: flex-end;
+  display: flex;
 }
-.kb-advanced-slide-inner h2 {
+.kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
   background-color: #e3000f;
   color: #ffffff;
 }
