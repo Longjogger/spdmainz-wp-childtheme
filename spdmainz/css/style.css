@@ -195,8 +195,12 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 0;
 }
 
+.kb-advanced-slide-inner {
+  align-items: flex-end;
+}
 .kb-advanced-slide-inner h2 {
   background-color: #e3000f;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
