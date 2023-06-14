@@ -15,6 +15,7 @@ function team_styles() {
     global $post;
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
         wp_enqueue_style( 'team-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
+        wp_enqueue_script( 'team-javascript',  get_stylesheet_directory_uri() . '/js/team.css' );
     }
 }
 add_action( 'get_footer', 'team_styles');
