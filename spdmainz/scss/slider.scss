@@ -25,9 +25,10 @@
             font-size: 2.8rem;
             background-color: $red;
             color: $white;
-            padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+            padding: 0.8rem 1rem 0.8rem 1rem;
             @media (max-width: 480px) {
                 font-size: 1.8rem;
+                padding: 0.4rem 0.6rem 0.4rem 0.6rem;
             } 
         }
     }

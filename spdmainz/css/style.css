@@ -208,11 +208,12 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   font-size: 2.8rem;
   background-color: #e3000f;
   color: #ffffff;
-  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
 }
 @media (max-width: 480px) {
   .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
     font-size: 1.8rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
   }
 }
 
