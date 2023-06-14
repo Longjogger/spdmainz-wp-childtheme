@@ -196,4 +196,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   transform: unset;
 }
 
+.teamshowcasefree-col-lg-3 {
+  width: unset;
+}
+
 /*# sourceMappingURL=style.css.map */
