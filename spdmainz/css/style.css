@@ -140,6 +140,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 }
 .wp-block-kadence-posts .loop-entry .entry-content-wrap .entry-meta {
   font-size: unset;
+  color: #e3000f;
 }
 
 .calendar {
