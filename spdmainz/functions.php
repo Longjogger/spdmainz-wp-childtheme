@@ -12,25 +12,11 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 function tmf_enqueue_scripts() {
     global $post;
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
-        wp_register_style( 'tmf-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
-        wp_enqueue_style( 'tmf-stylesheet' );
+        wp_enqueue_style( 'tmf-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
+        //wp_enqueue_style( 'tmf-stylesheet' );
     }
 }
 add_action( 'get_footer', 'tmf_enqueue_scripts');
-
-
-
-$current_page_id = get_queried_object_id();;
-$content = get_post_field('post_content', $current_page_id);
-$shortcode_pattern = '/\[tmfshortcode\w+\]/';
-if (preg_match($shortcode_pattern, $content)) {
-    // function child_theme_styles_team() {
-    //     wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
-    // }
-    add_action( 'get_footer', function () {
-        wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
-    });
-}
 
 /**
  * Disabling Author Page
