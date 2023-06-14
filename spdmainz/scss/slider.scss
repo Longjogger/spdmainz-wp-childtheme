@@ -25,6 +25,9 @@
             background-color: $red;
             color: $white;
             padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+            @media (max-width: 480px) {
+                font-size: 1.8rem;
+            } 
         }
     }
 }

@@ -209,5 +209,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   color: #ffffff;
   padding: 0.4rem 0.6rem 0.4rem 0.6rem;
 }
+@media (max-width: 480px) {
+  .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
+    font-size: 1.8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
