@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 $current_page_id = get_queried_object_id();;
 $content = get_post_field('post_content', $current_page_id);
 $shortcode_pattern = '/\[tmfshortcode\w+\]/';
-//echo "page:" . $current_page_id;
+var_dump(get_post());
 if (preg_match($shortcode_pattern, $content)) {
     // function child_theme_styles_team() {
     //     wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
