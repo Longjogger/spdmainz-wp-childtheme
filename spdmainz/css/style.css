@@ -116,6 +116,9 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 #mobile-nav-trigger .nav-trigger-case:hover {
   color: #ffffff;
 }
+#mobile-nav-trigger .nav-trigger-case:hover .kad-menu-name {
+  color: #ffffff;
+}
 
 .sliderclass {
   padding: 0;

@@ -39,6 +39,9 @@ nav#nav-main {
         color: $white;
         &:hover {
             color: $white;
+            .kad-menu-name {
+                color: $white;
+            }
         }
     }
 }
