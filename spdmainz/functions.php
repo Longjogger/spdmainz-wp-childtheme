@@ -16,10 +16,12 @@ $shortcode_pattern = '/\[tmfshortcode\w+\]/';
 // Check if the current page has a shortcode matching the pattern
 if (preg_match($shortcode_pattern, $content)) {
     // The current page has a matching shortcode
-    function child_theme_styles_team() {
+    // function child_theme_styles_team() {
+    //     wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
+    // }
+    add_action( 'get_footer', function () {
         wp_enqueue_style( 'team-style', get_stylesheet_directory_uri() . '/css/team.css' );
-    }
-    add_action( 'get_footer', 'child_theme_styles_team' );
+    });
 }
 /**
  * Disabling Author Page
