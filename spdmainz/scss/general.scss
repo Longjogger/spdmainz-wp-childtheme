@@ -1,3 +1,5 @@
+@import 'variables';
+
 html, body {
     font-family: "Open Sans";
     font-size: 14px;
@@ -14,7 +16,7 @@ h1 {
 	color: $red;
 }
 
-h2 {
+@mixin h2 {
 	font-family: "Open Sans";
 	font-size: 1.8rem;
 	line-height: 2.2rem;

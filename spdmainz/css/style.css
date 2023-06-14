@@ -1,18 +1,165 @@
-/* Error: There is no module with the namespace "general".
- *    ,
- * 25 |                 @include general.h2;
- *    |                 ^^^^^^^^^^^^^^^^^^^
- *    '
- *   spdmainz/scss/team.scss 25:17  @import
- *   spdmainz/scss/_main.scss 15:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "general".\a    \2577 \a 25 \2502                  @include general.h2;\a    \2502                  ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   spdmainz/scss/team.scss 25:17  @import\a   spdmainz/scss/_main.scss 15:9  root stylesheet';
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: local("../fonts/Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+html, body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+}
+
+.page-header {
+  border: 0;
+  margin: 0;
+}
+
+p.image-credits {
+  padding-top: 20px;
+  font-size: small;
+}
+
+#logo {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+#logo .brand {
+  display: inline-block;
+}
+#logo p.kad_tagline {
+  /* Slogan styling */
+  font-family: "Open Sans";
+  line-height: 18px;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+  font-size: 18px;
+  text-align: left;
+  /* Slogan in vertical align bottom */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px 0px 0px 10px;
+  margin: 0px;
+}
+
+nav#nav-main ul.sf-menu li {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+}
+nav#nav-main ul.sf-menu li a {
+  color: #e3000f;
+}
+nav#nav-main ul.sf-menu li a:hover {
+  background-color: #e3000f;
+  color: #ffffff;
+}
+nav#nav-main ul.sf-menu li ul li a {
+  color: #e3000f;
+}
+nav#nav-main ul.sf-menu li ul li a:hover {
+  background-color: #e3000f;
+  color: #ffffff;
+}
+
+#mobile-nav-trigger {
+  color: #ffffff;
+  background-color: #e3000f;
+}
+#mobile-nav-trigger button.nav-trigger-case {
+  color: #ffffff;
+}
+#mobile-nav-trigger button.nav-trigger-case:hover {
+  color: #ffffff;
+}
+
+.sliderclass {
+  padding: 0;
+}
+
+.wp-block-kadence-posts .loop-entry {
+  box-shadow: unset;
+}
+.wp-block-kadence-posts .loop-entry .entry-content-wrap {
+  padding: 1rem;
+}
+.wp-block-kadence-posts .loop-entry .entry-content-wrap .entry-meta {
+  font-size: unset;
+}
+
+.calendar {
+  column-gap: 2.5rem;
+}
+.calendar .image {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.calendar .image a {
+  display: block;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 66.67%;
+  position: relative;
+}
+.calendar .image a img {
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+.calendar .wp-block-column .info {
+  padding: 1rem;
+}
+
+.postlist .col-md-7 header, .postlist.fullwidth .col-md-8 header {
+  padding: 0;
+}
+
+.subhead {
+  font-size: 1rem;
+}
+.subhead a {
+  font-size: 1rem;
+}
+
+.posttags {
+  font-size: 0.8rem;
+}
+.posttags a {
+  font-size: 0.8rem;
+}
+
+.icon-tag::after {
+  content: " ";
+}
+
+.postlist .col-md-7 .entry-content, .postlist.fullwidth .col-md-8 .entry-content {
+  padding: 10px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
