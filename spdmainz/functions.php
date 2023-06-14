@@ -8,15 +8,16 @@ function child_theme_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
-// Include if Team Showcase is used
-function tmf_enqueue_scripts() {
+/**
+ * Adjustment Team Showcase
+ */
+function team_styles() {
     global $post;
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
-        wp_enqueue_style( 'tmf-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
-        //wp_enqueue_style( 'tmf-stylesheet' );
+        wp_enqueue_style( 'team-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
     }
 }
-add_action( 'get_footer', 'tmf_enqueue_scripts');
+add_action( 'get_footer', 'team_styles');
 
 /**
  * Disabling Author Page
