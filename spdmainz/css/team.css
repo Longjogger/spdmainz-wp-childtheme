@@ -42,6 +42,17 @@ p.image-credits {
   font-style: normal;
   color: #e3000f;
 }
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content .client_designation {
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 600;
+}
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-content .client_emails {
+  color: inherit;
+  font-size: inherit;
+  font-style: normal;
+}
 
 .teamshowcasefree_style01:hover img {
   transform: unset;

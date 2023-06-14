@@ -26,7 +26,17 @@
             h2 {
                 @include general.h2();
             }
-            
+            .client_designation {
+                color: inherit;
+                font-size: inherit;
+                font-style: normal;
+                font-weight: 600;
+            }
+            .client_emails {
+                color: inherit;
+                font-size: inherit;
+                font-style: normal;
+            }
         }
     }
 }
