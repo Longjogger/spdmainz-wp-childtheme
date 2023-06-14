@@ -55,6 +55,8 @@ h1, p {
 
 .footer-widget {
   font-size: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footerbase {
