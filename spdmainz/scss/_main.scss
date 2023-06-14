@@ -19,7 +19,7 @@ h1, p {
     @include hyphens();
 }
 
-.footer-widget {
+#containerfooter {
     @include containerfooter();
 }
 .footerbase {
