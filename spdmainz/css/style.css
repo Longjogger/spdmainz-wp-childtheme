@@ -22,10 +22,6 @@ p.image-credits {
   font-size: small;
 }
 
-#containerfooter {
-  font-size: 0.8rem;
-}
-
 html, body {
   font-family: "Open Sans";
   font-size: 14px;
@@ -49,6 +45,10 @@ h2 {
   font-weight: 600;
   font-style: normal;
   color: #e3000f;
+}
+
+.footer-widget {
+  font-size: 0.8rem;
 }
 
 #logo {

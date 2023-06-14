@@ -8,10 +8,6 @@ p.image-credits {
   font-size: small;
 }
 
-#containerfooter {
-  font-size: 0.8rem;
-}
-
 [class^=tp-team-pro-area-] {
   display: grid;
   row-gap: 2.5rem;

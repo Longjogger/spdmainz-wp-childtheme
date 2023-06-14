@@ -38,6 +38,6 @@ p.image-credits {
 }
 
 // Footer Size
-#containerfooter {
+@mixin containerfooter() {
 	font-size: 0.8rem;
 }
