@@ -16,7 +16,7 @@ function tmf_enqueue_scripts() {
         wp_enqueue_style( 'salcodes-stylesheet' );
     }
    }
-   add_action( 'wp_enqueue_scripts', 'tmf_enqueue_scripts');
+   add_action( 'get_footer', 'tmf_enqueue_scripts');
 
 
 
