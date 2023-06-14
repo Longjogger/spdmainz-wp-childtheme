@@ -80,6 +80,7 @@ nav#nav-main ul.sf-menu li {
 }
 nav#nav-main ul.sf-menu li a {
   color: #e3000f;
+  font-weight: 600;
 }
 nav#nav-main ul.sf-menu li a:hover {
   background-color: #e3000f;

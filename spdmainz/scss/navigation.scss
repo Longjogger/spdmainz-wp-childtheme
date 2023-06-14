@@ -8,6 +8,7 @@ nav#nav-main {
             font-style: normal;
             a {
                 color: $red;
+                font-weight: 600;
                 &:hover {
                     background-color: $red;
                     color: $white;
