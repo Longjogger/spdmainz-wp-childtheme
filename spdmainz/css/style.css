@@ -177,7 +177,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   column-gap: 2.5rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-thumbnail-01 img {
+[class^=tp-team-pro-area-] .gridfilter-item {
+  width: 100%;
+}
+[class^=tp-team-pro-area-] .gridfilter-item .teamshowcasefree_style01 .tp-team-pro-thumbnail-01 img {
   max-width: 100%;
 }
 
