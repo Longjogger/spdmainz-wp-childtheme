@@ -13,7 +13,7 @@ function my_custom_function() {
     $current_page_id = get_queried_object_id();
     // Use the $current_page_id as needed
 }
-add_action('wp', 'my_custom_function');
+add_action('mywp', 'my_custom_function');
 
 
 $current_page_id = get_queried_object_id();;
