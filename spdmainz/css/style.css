@@ -198,10 +198,10 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 .kb-advanced-slide-inner-wrap {
   align-items: flex-end;
   display: flex;
-  padding-left: 0px;
 }
 .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner {
   width: unset;
+  padding-right: 20vw;
 }
 .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
   font-size: 2.8rem;

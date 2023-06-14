@@ -17,9 +17,9 @@
 .kb-advanced-slide-inner-wrap {
     align-items: flex-end;
     display: flex;
-    padding-left: 0px;
     .kb-advanced-slide-inner {
         width: unset;
+        padding-right: 20vw;
         h2 {
             font-size: 2.8rem;
             background-color: $red;
