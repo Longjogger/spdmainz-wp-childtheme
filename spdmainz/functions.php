@@ -9,7 +9,7 @@ function child_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
 // Include if Team Showcase is used
-$current_page_id = get_the_ID();
+$current_page_id = get_queried_object_id();
 // Get the content of the current page
 $content = get_post_field('post_content', $current_page_id);
 
