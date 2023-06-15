@@ -4,31 +4,34 @@
  */
 function child_theme_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-theme', get_stylesheet_directory_uri() .'/css/style.css' , array('parent-style'));
+    wp_enqueue_style( 'child-theme', get_stylesheet_directory_uri() .'/css/style.css' , array('parent-style') );
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
 
+
 /**
- * Adjustment Frontpage
+ * Frontpage: Loading Calendar Icon
  */
 function startseite() {
     if( is_front_page() ) {
         wp_enqueue_script( 'startseite-javascript',  get_stylesheet_directory_uri() . '/js/startseite.js' );
     }
 }
-add_action( 'get_footer', 'startseite');
+add_action( 'get_footer', 'startseite' );
+
 
 /**
- * Adjustment Team Showcase
+ * Team Showcase: Loading Style & Script, if Shortcode is using
  */
 function team_styles() {
     global $post;
-    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode') ) {
+    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode' ) ) {
         wp_enqueue_style( 'team-stylesheet',  get_stylesheet_directory_uri() . '/css/team.css' );
         wp_enqueue_script( 'team-javascript',  get_stylesheet_directory_uri() . '/js/team.js' );
     }
 }
-add_action( 'get_footer', 'team_styles');
+add_action( 'get_footer', 'team_styles' );
+
 
 /**
  * Disabling Author Page
