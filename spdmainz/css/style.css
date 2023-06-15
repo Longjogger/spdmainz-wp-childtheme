@@ -72,6 +72,13 @@ label {
   font-size: 1.2rem;
 }
 
+.wpcf7-submit {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
 .widget-inner {
   clear: both;
 }
