@@ -27,8 +27,8 @@ p {
 
 // Bildrand entfernen
 [class^="wp-image-"] {
-    padding: 0px;
-    border: none;
+    padding: 0px!important;
+    border: none!important;
 }
 
 // Bildnachweis
