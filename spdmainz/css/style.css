@@ -65,6 +65,16 @@ p.image-credits {
   font-size: 0.8rem;
 }
 
+label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.widget-inner {
+  clear: both;
+}
+
 #topbar {
   background-color: #ffffff;
   color: #e3000f;
