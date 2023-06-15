@@ -25,6 +25,12 @@ p {
 	margin: 0;
 }
 
+// Bildrand entfernen
+[class^="wp-image"] {
+    padding: 0px;
+    border: none;
+}
+
 // Bildnachweis
 p.image-credits {
 	padding-top: 20px;
