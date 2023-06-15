@@ -252,6 +252,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding-top: none;
   padding-bottom: 20px;
   color: #e3000f;
+  background-color: #ffffff;
+  border-top: 1px solid #e3000f;
 }
 #containerfooter a {
   color: #e3000f;
