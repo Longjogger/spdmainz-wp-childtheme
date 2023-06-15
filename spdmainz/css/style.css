@@ -55,7 +55,7 @@ p {
   margin: 0;
 }
 
-[class^=wp-image-] {
+img {
   padding: 0px !important;
   border: none !important;
 }
