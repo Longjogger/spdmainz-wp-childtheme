@@ -12,6 +12,44 @@
   font-weight: 600;
   font-style: normal;
 }
+html, body {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #e3000f;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+p {
+  text-align: justify;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .page-header {
   border: 0;
   margin: 0;
@@ -19,7 +57,7 @@
 
 p.image-credits {
   padding-top: 20px;
-  font-size: small;
+  font-size: 0.8rem;
 }
 
 #topbar {
@@ -36,51 +74,6 @@ p.image-credits {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   color: #e3000f;
-}
-
-html, body {
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1 {
-  font-family: "Open Sans";
-  font-size: 2.8rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-  font-style: normal;
-  color: #e3000f;
-}
-
-h2 {
-  font-family: "Open Sans";
-  font-size: 1.8rem;
-  line-height: 2.2rem;
-  font-weight: 600;
-  font-style: normal;
-  color: #e3000f;
-}
-
-h1, p {
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-#containerfooter {
-  font-size: 0.8rem;
-  padding-top: none;
-  padding-bottom: 20px;
-  color: #e3000f;
-}
-#containerfooter a {
-  color: #e3000f;
-}
-
-.footerbase {
-  display: none;
 }
 
 #logo {
@@ -251,6 +244,30 @@ nav#nav-main ul.sf-menu li ul li a:hover {
     font-size: 1.8rem;
     padding: 0.4rem 0.6rem 0.4rem 0.6rem;
   }
+}
+
+#containerfooter {
+  font-size: 0.8rem;
+  padding-top: none;
+  padding-bottom: 20px;
+  color: #e3000f;
+}
+#containerfooter a {
+  color: #e3000f;
+}
+
+.footerbase {
+  display: none;
+}
+
+#topcontrol {
+  opacity: 0.4;
+  z-index: 99;
+}
+
+.to_the_top {
+  background-color: #e3000f;
+  z-index: 99;
 }
 
 /*# sourceMappingURL=style.css.map */

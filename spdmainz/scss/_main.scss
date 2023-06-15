@@ -3,44 +3,10 @@
 @import '_fonts';
 
 @import 'general';
-#topbar {
-    background-color: #f2f2f2;
-    color: $red;
-}
 
-.topbar-widget {
-    color:$red;
-}
+@import 'content';
 
-.kad-topbar-right {
-    text-align: right;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    color: $red;
-}
-
-html, body {
-    @include html();
-}
-
-h1 {
-    @include h1();
-}
-
-h2 {
-    @include h2();
-}
-
-h1, p {
-    @include hyphens();
-}
-
-#containerfooter {
-    @include containerfooter();
-}
-.footerbase {
-    @include footerbase();
-}
+@import 'topbar';
 
 @import 'logo';
 
@@ -51,3 +17,5 @@ h1, p {
 @import 'category';
 
 @import 'slider';
+
+@import 'footer';

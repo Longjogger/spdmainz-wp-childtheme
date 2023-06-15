@@ -1,0 +1,32 @@
+@import 'general';
+
+html, body {
+    @include html();
+}
+
+h1 {
+    @include h1();
+    @include hyphens();
+}
+
+h2 {
+    @include h2();
+    @include hyphens();
+}
+
+p {
+    text-align: justify;
+    @include hyphens();
+}
+
+// Seitentitel: Linien ausblenden
+.page-header {
+	border: 0;
+	margin: 0;
+}
+
+// Bildnachweis
+p.image-credits {
+	padding-top: 20px;
+	font-size: 0.8rem;
+}

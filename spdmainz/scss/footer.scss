@@ -1,0 +1,25 @@
+// Container
+#containerfooter {
+    font-size: 0.8rem;
+	padding-top: none;
+	padding-bottom: 20px;
+	color: $red;
+	a {
+		color: $red;
+	}
+}
+
+.footerbase {
+    display:none;
+}
+
+// Topcontrol
+#topcontrol {
+    opacity: 0.4;
+    z-index: 99;
+}
+  
+.to_the_top {
+    background-color: $red;
+    z-index: 99;
+ }
