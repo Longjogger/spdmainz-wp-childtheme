@@ -32,6 +32,29 @@ function team_styles() {
 }
 add_action( 'get_footer', 'team_styles' );
 
+/**
+ * Remove Topcontrol
+ */
+function remove_html_element() {
+    if (!is_admin()) {
+        ob_start();
+        $style = ob_get_clean();
+        echo remove_element_by_id($style, 'topcontrol');
+    }
+}
+add_action('wp_footer', 'remove_html_element');
+
+function remove_element_by_id($html, $id) {
+    $dom = new DOMDocument();
+    $dom->loadHTML($html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+    $element = $dom->getElementById($id);
+    if ($element) {
+        $element->parentNode->removeChild($element);
+    }
+    return $dom->saveHTML();
+}
+
+
 
 /**
  * Disabling Author Page

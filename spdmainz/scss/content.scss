@@ -44,11 +44,18 @@ label {
     font-weight: 400;
 }
 
-.wpcf7 input.wpcf7-submit {
+.kb-form .kadence-blocks-form-field .kb-forms-submit {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 1.2rem;
+    background-color: $red;
+    border: 2px solid $red;
+    &:hover {
+        background-color: $white;
+        color: $red;
+        border: 2px solid $red;
+    }
 }
 
 .widget-inner {
