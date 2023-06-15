@@ -1,6 +1,7 @@
 #topbar {
-    background-color: #f2f2f2;
+    background-color: $white;
     color: $red;
+    border-bottom: 1px solid $red;
 }
 
 .topbar-widget {
