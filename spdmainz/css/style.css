@@ -72,7 +72,7 @@ label {
   font-size: 1.2rem;
 }
 
-.wpcf7-submit {
+input.wpcf7-submit {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
