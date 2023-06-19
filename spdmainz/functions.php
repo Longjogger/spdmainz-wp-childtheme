@@ -7,9 +7,11 @@ function child_theme_styles() {
     wp_enqueue_style( 'child-theme', get_stylesheet_directory_uri() .'/css/style.css' , array('parent-style') );
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
+
 add_action( 'get_footer', function () {
     wp_enqueue_script( 'main-javascript',  get_stylesheet_directory_uri() . '/js/main.js' );
 });
+
 
 /**
  * Adding Favicon
