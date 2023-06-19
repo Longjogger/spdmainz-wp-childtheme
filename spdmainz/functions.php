@@ -31,7 +31,7 @@ add_action('wp_head', 'wp_favicon');
 
 
 /**
- * Frontpage: Loading Calendar Icon, Remov eCalendar Scripts
+ * Frontpage: Loading Calendar Icon
  */
 function add_startseite_js() {
     if( is_front_page() ) {
