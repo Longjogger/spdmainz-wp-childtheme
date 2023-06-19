@@ -44,14 +44,13 @@ add_action( 'get_footer', 'add_startseite_js' );
 /**
  * Team Showcase: Loading Style & Script, if Shortcode is using
  */
-function team_styles() {
+add_action( 'get_footer', function () {
     global $post;
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'tmfshortcode' ) ) {
         wp_enqueue_style( 'team',  get_stylesheet_directory_uri() . '/css/team.css' );
         wp_enqueue_script( 'team',  get_stylesheet_directory_uri() . '/js/team.js' );
     }
-}
-add_action( 'get_footer', 'team_styles' );
+} );
 
 
 /**
