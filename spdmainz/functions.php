@@ -7,7 +7,9 @@ function child_theme_styles() {
     wp_enqueue_style( 'child-theme', get_stylesheet_directory_uri() .'/css/style.css' , array('parent-style') );
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', PHP_INT_MAX );
-
+add_action( 'get_footer', function () {
+    wp_enqueue_script( 'main-javascript',  get_stylesheet_directory_uri() . '/js/main.js' );
+});
 
 /**
  * Adding Favicon
@@ -27,14 +29,14 @@ add_action('wp_head', 'wp_favicon');
 
 
 /**
- * Frontpage: Loading Calendar Icon
+ * Frontpage: Loading Calendar Icon, Remov eCalendar Scripts
  */
-function startseite() {
+function add_startseite_js() {
     if( is_front_page() ) {
         wp_enqueue_script( 'startseite-javascript',  get_stylesheet_directory_uri() . '/js/startseite.js' );
     }
 }
-add_action( 'get_footer', 'startseite' );
+add_action( 'get_footer', 'add_startseite_js' );
 
 
 /**
