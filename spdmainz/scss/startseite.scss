@@ -45,3 +45,19 @@
 		}
 	}
 }
+
+// Social Media
+
+
+.kt-svg-icon-wrap {
+	a.kt-svg-icon-link {
+		transition: all .2s ease-in-out;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+	svg {
+		width: 50%;
+		height: 50%;
+	}
+}

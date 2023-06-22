@@ -213,6 +213,17 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 1rem;
 }
 
+.kt-svg-icon-wrap a.kt-svg-icon-link {
+  transition: all 0.2s ease-in-out;
+}
+.kt-svg-icon-wrap a.kt-svg-icon-link:hover {
+  transform: scale(1.2);
+}
+.kt-svg-icon-wrap svg {
+  width: 50%;
+  height: 50%;
+}
+
 .postlist .col-md-7 header, .postlist.fullwidth .col-md-8 header {
   padding: 0;
 }
