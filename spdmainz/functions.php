@@ -163,7 +163,11 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
  * Admin Backend
  */
 function enqueue_my_admin_script( $page ) {
-    // if ($page !== 'post.php') return;
     wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/admin/js/admin.js', null, null, true );
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_my_admin_script' );
+
+function enqueue_my_admin_style() {
+    wp_enqueue_style('admin-styles', get_stylesheet_directory_uri() . '/admin/css/admin.css'); 
+}
+add_action('admin_enqueue_scripts', 'enqueue_my_admin_style');
