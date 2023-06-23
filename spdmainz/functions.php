@@ -158,3 +158,12 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
     }
     return $code;
 }
+
+/**
+ * Admin Backend
+ */
+function enqueue_my_admin_script( $page ) {
+    // if ($page !== 'post.php') return;
+    wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/admin/js/admin.js', null, null, true );
+}
+add_action( 'admin_enqueue_scripts', 'enqueue_my_admin_script' );
