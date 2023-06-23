@@ -121,7 +121,7 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
         // General
         $data['@context'] = 'http://schema.org';
         $data['@type'] = 'Event';
-    
+        $data['eventStatus'] = 'https://schema.org/EventScheduled';
         // Event Name
         $data['name'] = $EM_Event->name;
         // Event URL
@@ -132,6 +132,25 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
             $timezone = '+0' . $timezone . ':00';
         }       
         $data['startDate'] = $EM_Event->start()->getDate() . 'T' . $EM_Event->start()->getTime() . $timezone;
+        // Calculate Event End
+        $timezone = ( strtotime( $EM_Event->end()->getDateTime() ) - strtotime( $EM_Event->end(true)->getDateTime() ) ) / 60 / 60;
+        if( $timezone > 0 && $timezone < 10 ) {
+            $timezone = '+0' . $timezone . ':00';
+        }       
+        $data['endDate'] = $EM_Event->end()->getDate() . 'T' . $EM_Event->end()->getTime() . $timezone;
+        // Type Offline
+        if( !empty($EM_Event->location->name) ) {
+            $data['eventAttendanceMode'] = 'https://schema.org/OfflineEventAttendanceMode';
+            $data['location'] = array();
+            $data['@type'] = 'Place';
+            $data['location']['name'] = $EM_Event->location->name;
+            $data['location']['address'] = array();
+            $data['location']['address']['@type'] = 'PostalAddress';
+            $data['location']['address']['street'] = $EM_Event->location->address;
+            $data['location']['address']['postalCode'] = $EM_Event->location->postcode;
+            $data['location']['address']['addressLocality'] = $EM_Event->location->town;
+        }
+
 
         // Generating Code
         $code = '<script type="application/ld+json">' . json_encode($data, JSON_UNESCAPED_SLASHES, JSON_UNESCAPED_UNICODE) . '</script>';
