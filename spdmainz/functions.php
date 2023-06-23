@@ -109,3 +109,29 @@ add_filter( 'rest_endpoints', function( $endpoints ) {
     }
     return $endpoints;
 });
+
+/**
+ * Add Events Manager Placeholder
+ */
+add_filter( 'em_event_output_placeholder', 'my_em_styles_placeholders', 1, 3 );
+function my_em_styles_placeholders($code, $EM_Event, $result) {
+    if( $result == '#_DATA' ) {
+
+        $data = array();
+        // Event Name
+        $data['name'] = $EM_Event->name;
+        // Event URL
+        $data['url'] = $EM_Event->output('#_EVENTURL');
+        // Calculate Event Start
+        $timezone = ( strtotime( $EM_Event->start()->getDateTime() ) - strtotime( $EM_Event->start(true)->getDateTime() ) ) / 60 / 60;
+        if( $timezone > 0 && $timezone < 10 ) {
+            $timezone = '+0' . $timezone . ':00';
+        }       
+        $data['startDate'] = $EM_Event->start()->getDate() . 'T' . $EM_Event->start()->getTime() . $timezone;
+
+        // Generating Code
+        $code = '<script type="application/ld+json">' . json_encode($data, JSON_UNESCAPED_SLASHES, JSON_UNESCAPED_UNICODE) . '</script>';
+
+    }
+    return $code;
+}
