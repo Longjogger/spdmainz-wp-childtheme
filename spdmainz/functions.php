@@ -118,6 +118,10 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
     if( $result == '#_DATA' ) {
 
         $data = array();
+        // General
+        $data['@context'] = 'http://schema.org';
+        $data['@type'] = 'Event';
+    
         // Event Name
         $data['name'] = $EM_Event->name;
         // Event URL
