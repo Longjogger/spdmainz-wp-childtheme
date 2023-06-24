@@ -1,6 +1,6 @@
 jQuery(function ($) {
 
-    // Set default header/post image size for new posts
+    // Set default header/post image height for new posts
     if (typeof typenow !== 'undefined') {
         if (typenow === 'post') {
             if ($( '#_kad_posthead_height' ).val() == "") {
