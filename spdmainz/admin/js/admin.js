@@ -1,5 +1,14 @@
 jQuery(function ($) {
 
+    // Set default header/post image size for new posts
+    if (typeof typenow !== 'undefined') {
+        if (typenow === 'post') {
+            if ($( '#_kad_posthead_height' ).val() == "") {
+                $( '#_kad_posthead_height' ).val('600');
+            }
+        }
+    }
+
     // Set events category automatically
     if (typeof typenow !== 'undefined') {
         if(typenow === 'event') {
