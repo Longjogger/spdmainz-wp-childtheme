@@ -4,7 +4,7 @@
     "description": "The WordPress Child Theme of SPD Mainz",
     "main": "index.js",
     "scripts": {
-      "build": "sass ./spdmainz/scss/_main.scss ./spdmainz/css/style.css && sass ./spdmainz/scss/team.scss ./spdmainz/css/team.css",
+      "build": "sass ./spdmainz/scss/_main.scss ./spdmainz/css/style.css && sass ./spdmainz/scss/team.scss ./spdmainz/css/team.css && sass ./spdmainz/admin/scss/admin.scss ./spdmainz/admin/css/admin.css",
       "watch": "sass --watch ./wp-content/themes/spdmainz/scss/_main.scss ./wp-content/themes/spdmainz/css/style.css && sass ./wp-content/plugins/spdmainz/scss/2click_youtube/style.scss ./wp-content/plugins/spdmainz/css/2click_youtube/style.css"
     },
     "author": "Erik Donner",
