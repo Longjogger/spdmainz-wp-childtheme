@@ -15,8 +15,8 @@ jQuery(function ($) {
             let title = document.title.split('‹');
             title = title[1].split('—');
             let sitename = title[0].trim();
-            var str = $('.ms-global-categories').html();
-            var html = $.parseHTML( str ),
+            let str = $('.ms-global-categories').html();
+            let html = $.parseHTML( str ),
             nodeNames = [];
             $.each( html, function( i, el ) {
                 nodeNames[ i ] = el;
