@@ -5,22 +5,29 @@
 
 // News-Block
 // Anpassung der Abstände unter dem Bild
-.wp-block-kadence-posts .loop-entry {
-	box-shadow: unset;
-	.entry-content-wrap {
-		padding: 1rem;
-		padding: 1rem 1rem 0.25rem 1rem;
-		.entry-meta {
-			font-size: unset;
-			color: $red;
+.wp-block-kadence-posts {
+	.loop-entry {
+		box-shadow: unset;
+		.entry-content-wrap {
+			padding: 1rem;
+			padding: 1rem 1rem 0.25rem 1rem;
+			.entry-meta {
+				font-size: unset;
+				color: $red;
+			}
 		}
 	}
+}
+
+// vertical gap
+.wp-block-kadence-posts.grid-cols {
+	row-gap: 1rem;
 }
 
 // Entfernung der letzten Meldung in der mobilen Ansicht
 .aktuelles {
 	article {
-		@media (max-width: 992px) {
+		@media (max-width: 1024px) {
 			&:last-child {
 				display: none;
 			}
@@ -30,7 +37,9 @@
 
 // Kalender
 .calendar {
+	margin-bottom: 0;
 	column-gap: 2.5rem;
+	row-gap: 1rem;
 	.image {
 		bottom: 0;
 		left: 0;
@@ -55,7 +64,7 @@
 		.info {
 			padding: 1rem 1rem 0.25rem 1rem;
 		}
-		@media (max-width: 992px) {
+		@media (max-width: 1024px) {
 			&:last-child {
 				display: none;
 			}
