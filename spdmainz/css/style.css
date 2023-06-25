@@ -31,6 +31,12 @@ h1 {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
 
 h2 {
   font-family: "Open Sans";
@@ -188,6 +194,12 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   color: #e3000f;
 }
 
+@media (max-width: 992px) {
+  .aktuelles article:last-child {
+    display: none;
+  }
+}
+
 .calendar {
   column-gap: 2.5rem;
 }
@@ -213,6 +225,11 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 }
 .calendar .wp-block-column .info {
   padding: 1rem 1rem 0.25rem 1rem;
+}
+@media (max-width: 992px) {
+  .calendar .wp-block-column:last-child {
+    display: none;
+  }
 }
 
 .starseite-overview-link {
@@ -260,6 +277,12 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 10px 0px;
 }
 
+@media (max-width: 480px) {
+  article.post header h1 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
 .wp-block-kadence-slider {
   width: 100vw;
   position: relative;

@@ -17,6 +17,17 @@
 	}
 }
 
+// Entfernung der letzten Meldung in der mobilen Ansicht
+.aktuelles {
+	article {
+		@media (max-width: 992px) {
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
 // Kalender
 .calendar {
 	column-gap: 2.5rem;
@@ -43,6 +54,11 @@
 	.wp-block-column {
 		.info {
 			padding: 1rem 1rem 0.25rem 1rem;
+		}
+		@media (max-width: 992px) {
+			&:last-child {
+				display: none;
+			}
 		}
 	}
 }
