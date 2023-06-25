@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.eot");
@@ -180,6 +181,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 }
 .wp-block-kadence-posts .loop-entry .entry-content-wrap {
   padding: 1rem;
+  padding: 1rem 1rem 0.25rem 1rem;
 }
 .wp-block-kadence-posts .loop-entry .entry-content-wrap .entry-meta {
   font-size: unset;
@@ -210,7 +212,15 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   max-width: 100%;
 }
 .calendar .wp-block-column .info {
-  padding: 1rem;
+  padding: 1rem 1rem 0.25rem 1rem;
+}
+
+.starseite-overview-link {
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.starseite-overview-link a::before {
+  content: "→ ";
 }
 
 .kt-svg-icon-wrap a.kt-svg-icon-link {

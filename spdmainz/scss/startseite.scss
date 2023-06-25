@@ -9,6 +9,7 @@
 	box-shadow: unset;
 	.entry-content-wrap {
 		padding: 1rem;
+		padding: 1rem 1rem 0.25rem 1rem;
 		.entry-meta {
 			font-size: unset;
 			color: $red;
@@ -41,14 +42,24 @@
 	}
 	.wp-block-column {
 		.info {
-			padding: 1rem;
+			padding: 1rem 1rem 0.25rem 1rem;
+		}
+	}
+}
+
+// Overview Link Styling
+.starseite-overview-link
+{
+	font-weight: 600;
+	padding-left: 1rem;
+	a {
+		&::before {
+			content: '\2192\00A0';
 		}
 	}
 }
 
 // Social Media
-
-
 .kt-svg-icon-wrap {
 	a.kt-svg-icon-link {
 		transition: all .2s ease-in-out;
