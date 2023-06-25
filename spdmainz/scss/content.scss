@@ -9,6 +9,7 @@ h1 {
     @include hyphens();
 }
 
+
 h2 {
     @include h2();
     @include hyphens();
