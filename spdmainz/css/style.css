@@ -284,7 +284,24 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   .kb-advanced-slide-inner-wrap .kb-advanced-slide-inner h2 {
     font-size: 1.8rem;
     padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
   }
+}
+
+.wp-block-button__link {
+  border-radius: 5px;
+  background-color: #e3000f;
+  font-weight: 600;
+}
+.wp-block-button__link:hover {
+  background-color: #ffffff;
+  color: #e3000f;
+}
+
+.wp-block-button {
+  padding-left: 20vw;
 }
 
 #containerfooter {
