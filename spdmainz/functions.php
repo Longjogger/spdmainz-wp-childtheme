@@ -31,7 +31,7 @@ add_action('wp_head', 'wp_favicon');
 
 
 /**
- * Frontpage: Loading Calendar Icon
+ * Frontpage: Loading JS with Calendar Icon
  */
 function add_startseite_js() {
     if( is_front_page() ) {
@@ -51,6 +51,20 @@ add_action( 'get_footer', function () {
         wp_enqueue_script( 'team',  get_stylesheet_directory_uri() . '/js/team.js' );
     }
 } );
+
+
+/**
+ * Calendar: Loading Style & Script
+ */
+/*
+add_action( 'wp_enqueue_scripts', function () {
+    global $post;
+    if( is_a( $post, 'WP_Post' ) && (get_post_type() == 'event' ) ) {
+        wp_enqueue_style( 'calendar',  get_stylesheet_directory_uri() . '/css/calendar.css' );
+        wp_enqueue_script( 'calendar',  get_stylesheet_directory_uri() . '/js/calendar.js' );
+    }
+} );
+*/
 
 
 /**
