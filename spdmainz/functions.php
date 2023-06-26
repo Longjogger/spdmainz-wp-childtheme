@@ -56,15 +56,13 @@ add_action( 'get_footer', function () {
 /**
  * Calendar: Loading Style & Script
  */
-/*
 add_action( 'wp_enqueue_scripts', function () {
     global $post;
     if( is_a( $post, 'WP_Post' ) && (get_post_type() == 'event' ) ) {
-        wp_enqueue_style( 'calendar',  get_stylesheet_directory_uri() . '/css/calendar.css' );
-        wp_enqueue_script( 'calendar',  get_stylesheet_directory_uri() . '/js/calendar.js' );
+        wp_enqueue_style( 'calendar',  get_stylesheet_directory_uri() . '/css/calendar-only.css' );
+        //wp_enqueue_script( 'calendar',  get_stylesheet_directory_uri() . '/js/calendar.js' );
     }
 } );
-*/
 
 
 /**

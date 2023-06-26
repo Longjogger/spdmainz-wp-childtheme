@@ -202,6 +202,8 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   margin-bottom: 0;
   column-gap: 2.5rem;
   row-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .calendar .image {
   bottom: 0;
@@ -222,6 +224,9 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   object-fit: cover;
   width: 100%;
   max-width: 100%;
+  object-position: center 0;
+  position: absolute;
+  height: 100%;
 }
 .calendar .wp-block-column .info {
   padding: 1rem 1rem 0.25rem 1rem;
