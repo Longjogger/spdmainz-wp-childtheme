@@ -18,6 +18,11 @@ h2 {
 p {
     text-align: justify;
     @include hyphens();
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 // Seitentitel: Linien ausblenden
@@ -61,4 +66,17 @@ label {
 
 .widget-inner {
     clear:both;
+}
+
+// Fonts
+.icon-map-marker {
+    &:before {
+        content: '\E0F1';
+    }
+}
+
+.icon-arrow-right {
+    &:before {
+        content: '\E3B1';
+    }
 }
