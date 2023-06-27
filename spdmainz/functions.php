@@ -171,6 +171,8 @@ function my_em_styles_placeholders($code, $EM_Event, $result) {
     return $code;
 }
 
+require_once( 'functions/imagesource.php' );
+
 /**
  * Admin Backend
  */
