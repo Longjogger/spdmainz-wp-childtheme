@@ -100,6 +100,21 @@ label {
   content: "\e3b1";
 }
 
+.image-source {
+  right: 0;
+  position: absolute;
+  color: #ffffff;
+  bottom: 0px;
+  float: right;
+  padding: 0.2rem;
+  background: rgba(100, 100, 100, 0.6);
+  font-size: 0.8rem;
+}
+.image-source a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 #topbar {
   background-color: #ffffff;
   color: #e3000f;
@@ -140,6 +155,10 @@ label {
   align-items: flex-end;
   padding: 0px 0px 0px 10px;
   margin: 0px;
+  /* Link style */
+}
+#logo p.kad_tagline a:hover {
+  text-decoration: none;
 }
 
 nav#nav-main ul.sf-menu li {
@@ -230,8 +249,9 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   left: 0;
   right: 0;
   top: 0;
+  position: relative;
 }
-.calendar .image a {
+.calendar .image a.event-link {
   display: block;
   height: 0;
   margin: 0;
@@ -239,7 +259,7 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding-bottom: 66.67%;
   position: relative;
 }
-.calendar .image a img {
+.calendar .image a.event-link img {
   margin: 0;
   object-fit: cover;
   width: 100%;

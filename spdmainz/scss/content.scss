@@ -80,3 +80,20 @@ label {
         content: '\E3B1';
     }
 }
+
+// Image Sources
+.image-source {
+    right: 0;
+    position: absolute;
+    color: $white;
+    bottom: 0px;
+    float: right;
+    padding: 0.2rem;
+    background: rgba(100, 100, 100, 0.6);
+    font-size: 0.8rem;
+    a {
+        //padding-bottom: none!important;
+        text-decoration: underline;
+        color: $white;
+    }
+}

@@ -23,6 +23,12 @@
         align-items: flex-end;
         padding: 0px 0px 0px 10px;
         margin: 0px;
+        /* Link style */
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     
 }

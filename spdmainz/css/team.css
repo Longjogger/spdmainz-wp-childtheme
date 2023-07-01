@@ -43,6 +43,9 @@
   font-size: inherit;
   font-style: normal;
 }
+[class^=tp-team-pro-area-] .teamshowcasefree_style01 .tp-team-pro-overlay-content-01 {
+  background: none;
+}
 
 .teamshowcasefree_style01:hover img {
   transform: unset;
