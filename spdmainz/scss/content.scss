@@ -82,18 +82,60 @@ label {
 }
 
 // Image Sources
-.image-source {
-    right: 0;
-    position: absolute;
-    color: $white;
-    bottom: 0px;
-    float: right;
-    padding: 0.2rem;
-    background: rgba(100, 100, 100, 0.6);
-    font-size: 0.8rem;
-    a {
-        //padding-bottom: none!important;
-        text-decoration: underline;
+// News
+.post-thumbnail-inner {
+    .image-source {
+        right: 0;
+        position: absolute;
         color: $white;
+        bottom: 0px;
+        float: right;
+        padding: 0.2rem;
+        background: rgba(100, 100, 100, 0.6);
+        font-size: 0.8rem;
+        a {
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+}
+
+// Calendar
+.calendar .image {
+    .image-source {
+        right: 0;
+        position: absolute;
+        color: $white;
+        bottom: 0px;
+        float: right;
+        padding: 0.2rem;
+        background: rgba(100, 100, 100, 0.6);
+        font-size: 0.8rem;
+        a {
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+}
+
+// With Hero Image
+.imghoverclass {
+    position: relative;
+    .image-source {
+        right: 0;
+        position: absolute;
+        color: $white;
+        bottom: 0;
+        float: right;
+        padding: 0.2rem;
+        background: rgba(100, 100, 100, 0.6);
+        font-size: 0.8rem;
+        z-index: 2;
+        top: auto;
+        left: auto;
+        a {
+            text-decoration: underline;
+            color: $white;
+        }
     }
 }

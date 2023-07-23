@@ -189,38 +189,38 @@ add_action('admin_enqueue_scripts', 'enqueue_my_admin_style');
 
 
 
-$priority_1 = PHP_INT_MAX;
-//$priority_2 = PHP_INT_MAX;
 function slider_image_source( $content ) {
-    $doc = new DOMDocument();
-    @$doc->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
-    $xpath = new DOMXpath($doc);
-    $elements = $xpath->query('//div[contains(@class, "kb-advanced-slide-inner-wrap")]');
-    $var = "";
-    foreach ($elements as $element) {
-        // Get Element
-        $myelement = $element;
-        // Get Style
-        $style = $myelement->getAttribute('style');
-        // Regular expression pattern to extract the URL
-        $pattern = '/url\((.*?)\)/';
-        preg_match($pattern, $style, $matches);
-        // Extracted URL
-        $url = $matches[1];
+    if( is_front_page() ) {
+        $doc = new DOMDocument();
+        @$doc->loadHTML(mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8'));
+        $xpath = new DOMXpath($doc);
+        $elements = $xpath->query('//div[contains(@class, "kb-advanced-slide-inner-wrap")]');
+        $var = "";
+        foreach ($elements as $element) {
+            // Get Element
+            $myelement = $element;
+            // Get Style
+            $style = $myelement->getAttribute('style');
+            // Regular expression pattern to extract the URL
+            $pattern = '/url\((.*?)\)/';
+            preg_match($pattern, $style, $matches);
+            // Extracted URL
+            $url = $matches[1];
 
-        $img = $doc->createElement('img', '');
-        $img->setAttribute('src', $url);
-        $img->setAttribute('style', 'display:none;');
-        $myelement->appendChild($img);
+            $img = $doc->createElement('img', '');
+            $img->setAttribute('src', $url);
+            $img->setAttribute('style', 'display:none;');
+            $myelement->appendChild($img);
 
+        }
+        $body = $doc->getElementsByTagName('body')->item(0);
+        $modifiedContent = '';
+
+        foreach ($body->childNodes as $node) {
+            $modifiedContent .= $doc->saveHTML($node);
+        }
+
+        return $modifiedContent;
     }
-    $body = $doc->getElementsByTagName('body')->item(0);
-    $modifiedContent = '';
-
-    foreach ($body->childNodes as $node) {
-        $modifiedContent .= $doc->saveHTML($node);
-    }
-
-    return $modifiedContent;
 }
-add_filter( 'the_content', 'slider_image_source', 100 );
+//add_filter( 'the_content', 'slider_image_source', 100 );
