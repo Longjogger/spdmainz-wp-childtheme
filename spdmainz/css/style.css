@@ -100,6 +100,21 @@ label {
   content: "\e3b1";
 }
 
+.slider .image-source {
+  right: 0;
+  position: absolute;
+  color: #ffffff;
+  bottom: 0px;
+  float: right;
+  padding: 0.2rem;
+  background: rgba(100, 100, 100, 0.6);
+  font-size: 0.8rem;
+}
+.slider .image-source a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 .post-thumbnail-inner .image-source {
   right: 0;
   position: absolute;
@@ -241,6 +256,9 @@ nav#nav-main ul.sf-menu li ul li a:hover {
   padding: 0;
 }
 
+.wp-block-kadence-posts .entry-taxonomies {
+  text-transform: none;
+}
 .wp-block-kadence-posts .loop-entry {
   box-shadow: unset;
 }

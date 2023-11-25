@@ -6,6 +6,9 @@
 // News-Block
 // Anpassung der Abstände unter dem Bild
 .wp-block-kadence-posts {
+	.entry-taxonomies {
+		text-transform: none;
+	}
 	.loop-entry {
 		box-shadow: unset;
 		.entry-content-wrap {

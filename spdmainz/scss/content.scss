@@ -82,6 +82,24 @@ label {
 }
 
 // Image Sources
+// Slider
+.slider {
+    .image-source {
+        right: 0;
+        position: absolute;
+        color: $white;
+        bottom: 0px;
+        float: right;
+        padding: 0.2rem;
+        background: rgba(100, 100, 100, 0.6);
+        font-size: 0.8rem;
+        a {
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+}
+
 // News
 .post-thumbnail-inner {
     .image-source {
