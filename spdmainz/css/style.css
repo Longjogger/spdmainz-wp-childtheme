@@ -147,6 +147,24 @@ label {
   color: #ffffff;
 }
 
+.wp-block-image .image-source {
+  right: 0;
+  position: relative;
+  color: #ffffff;
+  bottom: 1.6rem;
+  float: right;
+  padding: 0.2rem;
+  background: rgba(100, 100, 100, 0.6);
+  font-size: 0.8rem;
+  z-index: 2;
+  top: auto;
+  left: auto;
+}
+.wp-block-image .image-source a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
 .postfeat {
   position: relative;
 }
