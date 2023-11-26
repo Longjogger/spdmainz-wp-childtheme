@@ -115,19 +115,40 @@ label {
   color: #ffffff;
 }
 
-.post-thumbnail-inner .image-source {
-  right: 0;
-  position: absolute;
+.wp-block-kadence-posts article .image-source {
+  position: relative;
   color: #ffffff;
-  bottom: 0px;
+  bottom: 1.6rem;
   float: right;
   padding: 0.2rem;
   background: rgba(100, 100, 100, 0.6);
   font-size: 0.8rem;
 }
-.post-thumbnail-inner .image-source a {
+.wp-block-kadence-posts article .image-source a {
   text-decoration: underline;
   color: #ffffff;
+}
+
+.post-image-container .image-source {
+  right: 0;
+  position: relative;
+  color: #ffffff;
+  bottom: 1.6rem;
+  float: right;
+  padding: 0.2rem;
+  background: rgba(100, 100, 100, 0.6);
+  font-size: 0.8rem;
+  z-index: 2;
+  top: auto;
+  left: auto;
+}
+.post-image-container .image-source a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.postfeat {
+  position: relative;
 }
 
 .calendar .image .image-source {
@@ -145,14 +166,11 @@ label {
   color: #ffffff;
 }
 
-.imghoverclass {
-  position: relative;
-}
-.imghoverclass .image-source {
+.pageheadfeature .image-source {
   right: 0;
-  position: absolute;
+  position: relative;
   color: #ffffff;
-  bottom: 0;
+  bottom: 1.6rem;
   float: right;
   padding: 0.2rem;
   background: rgba(100, 100, 100, 0.6);
@@ -161,7 +179,25 @@ label {
   top: auto;
   left: auto;
 }
-.imghoverclass .image-source a {
+.pageheadfeature .image-source a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.postfeat .image-source {
+  right: 0;
+  position: relative;
+  color: #ffffff;
+  bottom: 1.6rem;
+  float: right;
+  padding: 0.2rem;
+  background: rgba(100, 100, 100, 0.6);
+  font-size: 0.8rem;
+  z-index: 2;
+  top: auto;
+  left: auto;
+}
+.postfeat .image-source a {
   text-decoration: underline;
   color: #ffffff;
 }
@@ -475,6 +511,16 @@ nav#nav-main ul.sf-menu li ul li a:hover {
 .to_the_top {
   background-color: #e3000f;
   z-index: 99;
+}
+
+#sticky-social-icons-container {
+  top: auto !important;
+  bottom: 20px;
+  left: auto !important;
+  right: 0;
+}
+#sticky-social-icons-container ul a i:hover, #sticky-social-icons-container li a i:hover {
+  zoom: 1.2;
 }
 
 /*# sourceMappingURL=style.css.map */

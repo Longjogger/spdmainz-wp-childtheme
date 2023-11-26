@@ -100,13 +100,12 @@ label {
     }
 }
 
-// News
-.post-thumbnail {
+// News on Startpage
+.wp-block-kadence-posts article {
     .image-source {
-        right: 0;
-        position: absolute;
+        position: relative;
         color: $white;
-        bottom: 0px;
+        bottom: 1.6rem;
         float: right;
         padding: 0.2rem;
         background: rgba(100, 100, 100, 0.6);
@@ -116,6 +115,30 @@ label {
             color: $white;
         }
     }
+}
+
+// News category
+.post-image-container .image-source {
+    right: 0;
+    position: relative;
+    color: $white;
+    bottom: 1.6rem;
+    float: right;
+    padding: 0.2rem;
+    background: rgba(100, 100, 100, 0.6);
+    font-size: 0.8rem;
+    z-index: 2;
+    top: auto;
+    left: auto;
+    a {
+        text-decoration: underline;
+        color: $white;
+    }
+}
+
+// News article
+.postfeat {
+    position: relative;
 }
 
 // Calendar
@@ -136,14 +159,34 @@ label {
     }
 }
 
-// With Hero Image
-.imghoverclass {
-    position: relative;
+// With Hero Image: Page
+.pageheadfeature {
     .image-source {
         right: 0;
-        position: absolute;
+        position: relative;
         color: $white;
-        bottom: 0;
+        bottom: 1.6rem;
+        float: right;
+        padding: 0.2rem;
+        background: rgba(100, 100, 100, 0.6);
+        font-size: 0.8rem;
+        z-index: 2;
+        top: auto;
+        left: auto;
+        a {
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+}
+
+// With Hero Image: Post
+.postfeat {
+    .image-source {
+        right: 0;
+        position: relative;
+        color: $white;
+        bottom: 1.6rem;
         float: right;
         padding: 0.2rem;
         background: rgba(100, 100, 100, 0.6);

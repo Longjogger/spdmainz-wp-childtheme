@@ -1,0 +1,20 @@
+#sticky-social-icons-container {
+
+    top: auto!important;
+    bottom: 20px;
+    left: auto!important;
+    right: 0;
+
+    ul, li {
+        
+        a i {
+            &:hover {
+        
+                zoom: 1.2;
+        
+            }
+        }
+
+    }
+
+}
