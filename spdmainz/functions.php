@@ -64,6 +64,13 @@ add_action( 'wp_enqueue_scripts', function () {
     }
 } );
 
+/**
+ * Social Media: Lading Font Awesome
+ */
+add_action( 'wp_enqueue_scripts', function () {
+    wp_enqueue_style( 'fontawesome',  get_stylesheet_directory_uri() . '/css/fontawesome.min.css' );
+} );
+
 
 /**
  * Disabling Author Page
